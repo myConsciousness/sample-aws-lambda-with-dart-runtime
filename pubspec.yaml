@@ -1,0 +1,11 @@
+name: sample
+
+environment:
+  sdk: ^3.3.4
+
+dependencies:
+  aws_lambda_dart_runtime_ns: ^0.0.13
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0

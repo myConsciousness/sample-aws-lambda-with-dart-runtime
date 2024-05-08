@@ -1,0 +1,20 @@
+service: sample-app
+
+provider:
+  name: aws
+  runtime: provided
+  timeout: 30
+  region: ap-northeast-1
+  architecture: arm64
+  ecr:
+    images:
+      appImage:
+        path: ./
+        platform: linux/arm64
+
+functions:
+  hello-world:
+    image:
+      name: appImage
+      command:
+        - hello-world
